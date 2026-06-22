@@ -64,7 +64,7 @@ const Navbar = () => {
           <button>
             <FaBagShopping className="lg:text-xl cursor-pointer text-zinc-800" />
           </button>
-          <button onClick={toggleMenu}>
+          <button onClick={toggleMenu} className="lg:hidden">
             {showMenu ? (<TbMenu3 className="text-lg lg:hidden cursor-pointer text-zinc-800" />) : (<TbMenu2 />)}
           </button>
         </div>
