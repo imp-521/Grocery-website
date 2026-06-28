@@ -1,16 +1,52 @@
-# React + Vite
+###Grocery Website 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully responsive grocery e-commerce website built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+###Features:
+Fully Responsive Design (Mobile, Tablet, Desktop)
+Modern and Clean UI
+Product Listing Page
+Product Categories
+Reusable React Components
+Mobile Navigation Menu
+Sticky Navbar
+Smooth User Experience
+Organized Project Structure
+Fast Development with Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+###Technologies Used:
+React.js
+Vite
+Tailwind CSS
+JavaScript (ES6+)
+React Icons
+React Router DOM
 
-## React Compiler
+###Live Demo:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗https://frolicking-platypus-2c3249.netlify.app/
 
-## Expanding the ESLint configuration
+Screenshots:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Home Page](./assets/screen1.jpg)
+![Home Page](./assets/screen2.jpg)
+![Home Page](./assets/screen3.jpg)
+
+###Project Overview:
+
+This project was built to practice frontend development with React and Tailwind CSS by creating a modern grocery website. The main focus was on building reusable components, creating responsive layouts, and improving component-based architecture using React.
+
+###Challenges:
+Building reusable React components.
+Managing component structure and props.
+Creating responsive layouts for different screen sizes.
+Implementing mobile navigation.
+Organizing the project into reusable sections and pages.
+
+###What I Learned:
+Building responsive user interfaces with Tailwind CSS.
+Creating reusable components in React.
+Working with React Router for page navigation.
+Managing props and component composition.
+Structuring a scalable frontend project.
+Improving code organization and maintainability.
