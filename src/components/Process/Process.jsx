@@ -14,7 +14,7 @@ import { FiTruck } from "react-icons/fi";
 const Process = () => {
   const renderProcess = processCard.map((item) => {
     return (
-      <div className={`flex items-center justify-center flex-col gap-5 lg:gap-7 ${item.id % 2 === 0 ? 'md:-mt-40' : 'md:mt-40'}`}>
+      <div key={item.id} className={`flex items-center justify-center flex-col gap-5 lg:gap-7 ${item.id % 2 === 0 ? 'md:-mt-40' : 'md:mt-40'}`}>
         <div className="flex items-center justify-center">
           <span className="text-6xl border border-dashed rounded-full lg:text-7xl">{item.number}</span>
         </div>
