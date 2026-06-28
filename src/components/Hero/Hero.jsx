@@ -4,7 +4,7 @@ import grocery from "../../assets/grocery.png";
 import Button from "../Button/Button";
 const Hero = () => {
   return (
-    <section>
+    <section id="hero">
       <div className=" w-full min-h-40 px-8 lg:px-15 sm:h-110 sm:w-full sm:flex sm:flex-row-reverse lg:w-full lg:min-h-screen  pt-15 sm:pt-10">
         <div
           dir="rtl"

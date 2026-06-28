@@ -28,8 +28,8 @@ const Footer = () => {
               <h5 className="font-bold text-xl lg:text-2xl">متصل بمانید</h5>
               <span className="cursor-pointer  text-zinc-500">سوال یا بازخورد؟</span>
               <span className="cursor-pointer  text-zinc-500">خوشحال میشیم از تو بشنویم.</span>
-              <button className="absolute bg-linear-to-b from-orange-500 to-orange-400 w-8 h-8 lg:w-9 lg:h-9 flex items-center justify-center rounded-lg left-1 bottom-2 lg:bottom-1 cursor-pointer"><MdArrowBackIos className="text-white translate-x-1 lg:text-lg" /></button>
-              <input className="bg-white focus:outline-none p-3 text-sm rounded-lg w-full" autoComplete="none" type="email" placeholder="آدرس ایمیل"/>
+              <button className="absolute bg-linear-to-b from-orange-500 to-orange-400 w-8 h-8 md:w-5 md:h-5 lg:w-9 lg:h-9 flex items-center justify-center rounded-lg md:rounded-md left-1 bottom-2 md:bottom-1 lg:bottom-1 cursor-pointer"><MdArrowBackIos className="text-white translate-x-1 lg:text-lg md:text-sm" /></button>
+              <input className="bg-white focus:outline-none p-3 md:p-1 lg:p-3 text-sm rounded-lg w-full" autoComplete="none" type="email" placeholder="آدرس ایمیل"/>
             </div>
         </div>
       </div>

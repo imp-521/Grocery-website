@@ -32,7 +32,7 @@ const Process = () => {
   });
 
   return (
-    <section>
+    <section id="progress" className="scroll-mt-20 md:scroll-mt-10 lg:scroll-mt-22">
       <div className="flex items-center justify-center flex-col px-8 mt-10 lg:px-15">
         <div className="text-center md:text-right w-full lg:mb-7">
           <Heading first="چطور کار" third="می کنیم؟" />

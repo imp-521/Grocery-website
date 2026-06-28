@@ -12,7 +12,7 @@ const Cards = ({image, name, price}) => {
            <button className='bg-linear-to-b from-orange-400 to-orange-500 px-3 py-2 lg:px-4 lg:py-3 rounded-lg text-white cursor-pointer'><FaPlus /></button>
         </div>
         <div className='flex flex-3 items-center justify-center w-full'>
-           <img src={image} className='w-35 h-30 md:w-40 md:h-35 lg:w-45 lg:h-40 object-contain' />
+           <img src={image} className='w-38 h-30 md:w-40 md:h-35 lg:w-45 lg:h-40 object-contain' />
         </div>
         <div className='flex flex-3 items-center justify-center gap-3 flex-col w-full pb-3'>
            <h3 className='font-bold text-xl'>{name}</h3>

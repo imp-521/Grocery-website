@@ -4,13 +4,19 @@ import { FaBagShopping } from "react-icons/fa6";
 import { TbMenu2 } from "react-icons/tb";
 import { IoIosSearch } from "react-icons/io";
 import { TbMenu3 } from "react-icons/tb";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
+
+  const handleNaveClick = () =>{
+    setShowMenu(false)
+  }
+
   const [showMenu, setShowMenu] = useState(false);
   const [scrolled, setIsScrolled] = useState(false);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -22,31 +28,33 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header className="h-15 w-full lg:h-20 fixed  top-0 left-0  z-50">
       <nav
         className={`h-full w-full px-8 py-4 lg:px-15 flex items-center justify-between flex-row-reverse bg-white ${scrolled ? "shadow-lg" : ""}`}
       >
         <div className="h-full w-auto flex items-center justify-center">
-          <span className="font-bold text-2xl lg:text-3xl cursor-pointer">
+          <Link to='/' className="font-bold text-2xl lg:text-3xl cursor-pointer">
             سب<span className="text-orange-500">ز</span>ینو
-          </span>
+          </Link>
         </div>
 
         <div className="hidden lg:block">
           <ul className="w-full h-full flex items-center justify-between gap-14 flex-row-reverse">
-            <li className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
+            <a href="#hero" className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
               خانه
-            </li>
-            <li className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
-              درباره ما
-            </li>
-            <li className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
+            </a>
+            <a href="#category" className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
+              دسته بندی
+            </a>
+            <a href="#product" className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
+               محصولات 
+            </a>
+            <a href="#progress" className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
               فرایند
-            </li>
-            <li className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
-              تماس با ما
-            </li>
+            </a>
+            
           </ul>
         </div>
 
@@ -70,9 +78,9 @@ const Navbar = () => {
           </button>
           <button onClick={toggleMenu} className="lg:hidden">
             {showMenu ? (
-              <TbMenu3 className="text-lg lg:hidden cursor-pointer text-zinc-800" />
+              <TbMenu3 className="text-base lg:hidden cursor-pointer text-zinc-800" />
             ) : (
-              <TbMenu2 />
+              <TbMenu2  className="text-base"/>
             )}
           </button>
         </div>
@@ -81,18 +89,18 @@ const Navbar = () => {
           className={`w-65 h-80 lg:hidden absolute flex items-center justify-center bg-orange-500/15 backdrop-blur-lg top-30 left-1/2 ${showMenu ? "left-1/2" : "left-240"} transform -translate-x-1/2 rounded-xl transition-all duration-700 shadow-xl`}
         >
           <ul className="flex items-center justify-center flex-col gap-y-7">
-            <li className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
+            <a onClick={handleNaveClick} href="#hero" className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
               خانه
-            </li>
-            <li className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
-              درباره ما
-            </li>
-            <li className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
+            </a>
+            <a onClick={handleNaveClick}  href="#category" className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
+               دسته بندی
+            </a>
+            <a onClick={handleNaveClick} href="#product" className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
+              محصولات 
+            </a>
+            <a onClick={handleNaveClick} href="#progress" className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
               فرایند
-            </li>
-            <li className="text-xl hover:text-orange-500 cursor-pointer duration-200 text-zinc-800">
-              تماس با ما
-            </li>
+            </a>
             <li className="">
               <input
                 dir="rtl"

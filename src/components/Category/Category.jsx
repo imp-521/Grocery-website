@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
-    <section>
+    <section id="category" className="scroll-mt-10 lg:scroll-mt-0">
       <div
         dir="rtl"
         className="w-full h-320 md:h-110 lg:min-h-160 flex items-center justify-center gap-3 lg:gap-0 md:gap-10 flex-col px-8 lg:px-15"

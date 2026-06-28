@@ -17,7 +17,7 @@ const Products = () => {
     )
    })
   return (
-    <section>
+    <section id="product" className="scroll-mt-20 md:scroll-mt-10 lg:scroll-mt-22">
       <div className="w-full min-h-screen px-8 flex items-center flex-col mt-25 lg:px-15">
         <div className="flex items-center justify-center flex-col flex-1 w-full gap-8 md:gap-10 lg:gap-14">
             <Heading first='محصولات' third='ما'/>
