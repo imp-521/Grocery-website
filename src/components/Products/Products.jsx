@@ -3,6 +3,7 @@ import Heading from "../Heading/Heading";
 import Cards from "../Cards/Cards";
 import productList from "../ProductList/ProductList";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 
 const Products = () => {
@@ -36,7 +37,7 @@ const Products = () => {
             {render}
         </div>
         <div className="mt-10">
-          <Button content='مشاهده همه'/>
+           <Link to="/allproducts" className="bg-linear-to-b from-orange-400 to-orange-500 text-sm text-white rounded-lg cursor-pointer py-2 px-4 hover:scale-105 hover:to-orange-600 transform-all duration-300 sm:px-8 sm:py-3 lg:px-6 lg:py-2 lg:text-lg md:px-4 md:py-2">مشاهده همه</Link>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import dairy from "../../assets/dairy-and-eggs.png";
 import meat from "../../assets/meat-and-seafood.png";
 import Button from "../Button/Button";
 import Heading from "../Heading/Heading";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
@@ -32,7 +33,7 @@ const Category = () => {
                 محصولات تازه و ارگانیک که روزانه از مزارع محلی تهیه می‌شوند. طیف
                 وسیعی از میوه‌های فصل و سبزیجات تازه را کاوش کنید.
               </p>
-              <Button content="مشاهده همه" />
+              <Link to="/fruits" className="bg-linear-to-b from-orange-400 to-orange-500 text-sm text-white rounded-lg cursor-pointer py-2 px-4 hover:scale-105 hover:to-orange-600 transform-all duration-300 sm:px-8 sm:py-3 lg:px-6 lg:py-2 lg:text-lg md:px-4 md:py-2">مشاهده همه</Link>
             </div>
           </div>
           <div className="flex items-center justify-center md:justify-center flex-col w-full h-1/3 md:w-[1/3] md:h-full gap-3 md:gap-2 lg:gap-0 overflow-hidden md:py-3">
@@ -51,7 +52,7 @@ const Category = () => {
                 فرآورده‌های لبنی و تخم‌مرغ‌های محلی. از شیر و ماست خامه‌ای گرفته
                 تا پنیرهای سنتی و دست‌ساز انتخاب کنید و طعمی جدید را تحربه کنید.
               </p>
-              <Button content="مشاهده همه" />
+              <Link to="/dairy" className="bg-linear-to-b from-orange-400 to-orange-500 text-sm text-white rounded-lg cursor-pointer py-2 px-4 hover:scale-105 hover:to-orange-600 transform-all duration-300 sm:px-8 sm:py-3 lg:px-6 lg:py-2 lg:text-lg md:px-4 md:py-2">مشاهده همه</Link>
             </div>
           </div>
           <div className="flex items-center justify-center md:justify-center flex-col w-full h-1/3 md:w-[1/3] md:h-full gap-3 md:gap-2 lg:gap-0 overflow-hidden md:py-3">
@@ -71,7 +72,7 @@ const Category = () => {
                 تکه‌های تازه، گزینه‌های طعم‌دار شده و موارد دیگر انتخاب
                 کنید.{" "}
               </p>
-              <Button content="مشاهده همه" />
+              <Link to="/meet" className="bg-linear-to-b from-orange-400 to-orange-500 text-sm text-white rounded-lg cursor-pointer py-2 px-4 hover:scale-105 hover:to-orange-600 transform-all duration-300 sm:px-8 sm:py-3 lg:px-6 lg:py-2 lg:text-lg md:px-4 md:py-2">مشاهده همه</Link>
             </div>
           </div>
         </div>

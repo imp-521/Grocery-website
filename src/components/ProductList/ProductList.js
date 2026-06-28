@@ -19,7 +19,7 @@ import sliceCheese from '../../assets/slice-cheese.png'
 import strawberry from '../../assets/strawberry.png'
 import yogurt from '../../assets/yogurt.png'
 import fish from '../../assets/tilapia.png'
-import tofu from '../../assets/tofu.png' // اگر واقعاً عکس توفو هست میشه تغییر نام محصول
+import tofu from '../../assets/tofu.png'
 
 
 const productList = [
